@@ -12,7 +12,6 @@ export const useVotingStore = defineStore('voting', {
       localStorage.setItem('votes', JSON.stringify(this.votes));
     },
     makeVote(voter: Voter, id: string) {
-      console.log(this.votes);
       const index = this.votes.findIndex((voting) => voting.id === id);
       this.votes[index].usersVotes.push(voter);
       localStorage.setItem('votes', JSON.stringify(this.votes));

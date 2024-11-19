@@ -1,1 +1,1 @@
-export { default as VotingBlock } from './VotingBlock.vue'
+export * as VotingBlock from './VotingBlock.vue';

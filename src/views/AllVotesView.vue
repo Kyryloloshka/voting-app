@@ -11,10 +11,10 @@ const votingStore = useVotingStore();
 </script>
 
 <template>
-  <main class="container mt-6">
+  <main class="container mt-6 mb-48">
     <h2 class="text-2xl font-medium tracking-wider text-center mb-6">All votes</h2>
     <div class="gap-3 grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
-      <div v-for="(voting, index) in votingStore.votes" :key="index">
+      <div v-for="(voting) of votingStore.votes" :key="voting.id">
         <voting-block
           :voting="voting"
           :users-votes="usersVotes"

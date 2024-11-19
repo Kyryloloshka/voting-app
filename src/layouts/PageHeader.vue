@@ -9,7 +9,7 @@ import links from '@/constants/header-links.ts';
       <img class="h-12" src="/logo.svg" alt="logo">
       <nav>
         <ul class="flex gap-x-6 gap-y-2 justify-center py-3 flex-wrap">
-          <li v-for="link in links" :key="link.href">
+          <li v-for="link of links" :key="link.href">
             <router-link :to="link.href">{{ link.title }}</router-link>
           </li>
         </ul>
