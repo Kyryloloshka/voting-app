@@ -1,0 +1,1 @@
+export * as VotingBlock from './VotingBlock.vue';
